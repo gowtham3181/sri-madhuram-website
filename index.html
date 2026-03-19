@@ -3,141 +3,146 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sri Madhuram Restaurant</title>
+<title>Sri Madhuram</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
 }
 
-header {
-    background: #2e7d32;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
+/* NAVBAR */
 nav {
+    position: sticky;
+    top: 0;
     background: #1b5e20;
-    padding: 10px;
-    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
 }
 
 nav a {
     color: white;
-    margin: 10px;
+    margin: 0 10px;
     text-decoration: none;
-    font-weight: bold;
 }
 
+/* HERO */
 .hero {
-    background: url('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d') no-repeat center/cover;
-    height: 300px;
-    color: white;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1589302168068-964664d93dc0');
+    background-size: cover;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.section {
-    padding: 30px;
-    text-align: center;
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    border: 1px solid #ccc;
-    padding: 15px;
-    width: 200px;
-    border-radius: 10px;
-}
-
-footer {
-    background: #2e7d32;
     color: white;
     text-align: center;
-    padding: 15px;
+}
+
+.hero h1 {
+    font-size: 50px;
 }
 
 .btn {
     background: #ff9800;
-    padding: 10px 15px;
+    padding: 12px 20px;
+    border-radius: 5px;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+.gallery img {
+    width: 250px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #1b5e20;
+    color: white;
+    padding: 20px;
 }
 </style>
 
 </head>
 <body>
 
-<header>
-    <h1>Sri Madhuram</h1>
-    <p>Pure Vegetarian Restaurant</p>
-</header>
-
 <nav>
-    <a href="#">Home</a>
-    <a href="#menu">Menu</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <h2>Sri Madhuram</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
 <div class="hero">
-    Delicious Veg Food 🍽️
-</div>
-
-<div class="section" id="menu">
-    <h2>Our Menu</h2>
-    <div class="menu">
-        <div class="card">
-            <h3>Meals</h3>
-            <p>₹120</p>
-        </div>
-        <div class="card">
-            <h3>Dosa</h3>
-            <p>₹40</p>
-        </div>
-        <div class="card">
-            <h3>Idli</h3>
-            <p>₹30</p>
-        </div>
-        <div class="card">
-            <h3>Meals Combo</h3>
-            <p>₹150</p>
-        </div>
+    <div>
+        <h1>Authentic Veg Delights 🍽️</h1>
+        <p>Experience the Taste of Tradition</p>
+        <br>
+        <a class="btn" href="https://wa.me/91XXXXXXXXXX">Order on WhatsApp</a>
     </div>
 </div>
 
-<div class="section" id="about">
-    <h2>About Us</h2>
-    <p>
-        Sri Madhuram is a well-known pure vegetarian restaurant in Tenkasi,
-        offering delicious and affordable meals with traditional taste.
-    </p>
+<div class="section" id="menu">
+    <h2>Our Special Menu</h2>
+    <div class="menu">
+        <div class="card"><h3>South Indian Meals</h3><p>₹120</p></div>
+        <div class="card"><h3>Masala Dosa</h3><p>₹50</p></div>
+        <div class="card"><h3>Idli Set</h3><p>₹30</p></div>
+        <div class="card"><h3>Mini Tiffin</h3><p>₹90</p></div>
+    </div>
+</div>
+
+<div class="section gallery" id="gallery">
+    <h2>Food Gallery</h2>
+    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
+    <img src="https://images.unsplash.com/photo-1580828343064-fde4fc206bc6">
+    <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46">
+</div>
+
+<div class="section">
+    <h2>⭐ 4.4 Rating | Affordable Meals</h2>
+    <p>Serving 2900+ happy customers in Tenkasi</p>
 </div>
 
 <div class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p>📍 Courtallam Rd, Tenkasi, Tamil Nadu</p>
-    <p>🕒 Open till 11 PM</p>
+    <h2>Visit Us</h2>
+    <p>📍 Courtallam Road, Tenkasi</p>
 
-    <iframe 
-        src="https://www.google.com/maps?q=Sri%20Madhuram%20Tenkasi&output=embed"
-        width="100%" height="300" style="border:0;">
-    </iframe>
-
-    <br><br>
-    <a class="btn" href="#">Order Now</a>
+    <iframe src="https://www.google.com/maps?q=Sri%20Madhuram%20Tenkasi&output=embed"
+    width="100%" height="300"></iframe>
 </div>
 
 <footer>
