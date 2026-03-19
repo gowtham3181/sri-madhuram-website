@@ -18,11 +18,23 @@ body {
 nav {
     position: sticky;
     top: 0;
-    background: #b71c1c;
-    padding: 15px;
+    background: #1b5e20;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     color: white;
+}
+
+nav div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    margin: 5px 10px;
 }
 
 nav a {
@@ -90,6 +102,21 @@ footer {
     background: #b71c1c;
     color: white;
     padding: 20px;
+}
+    @media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav div {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
 }
 </style>
 
